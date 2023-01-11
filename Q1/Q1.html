@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DUMMY JSON</title>
+    <link rel="stylesheet" href="Q1.css" />
+    <script type="module" defer src="Q1.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>DUMMY JSON</h1>
+    </header>
+    <div id="img-box"></div>
+    <script>
+      fetch("https://dummyjson.com/posts")
+        .then((res) => res.json())
+        .then(console.log);
+    </script>
+    <footer>
+      <p id="footer-text">
+        <span style="text-decoration: underline">
+          IFRAH AYAZ <br />SP20-BCS-068 <br />
+          SECION:B</span
+        >
+      </p>
+    </footer>
+  </body>
+</html>
